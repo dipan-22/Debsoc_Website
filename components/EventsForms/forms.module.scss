@@ -1,0 +1,83 @@
+@import "styles/variables.scss";
+.formpage{
+    width: 100vw;
+    height: 100vh;
+}
+.navbar3 :global #navbar {
+    margin: 0 !important;
+    color: rgba(255, 255, 255, 0.5) !important;
+    backdrop-filter: blur(8px);
+
+    background: rgba(0, 0, 0, 0.7);
+    a {
+      font-size: normal;
+      color: rgba(255, 255, 255, 0.7) !important;
+    }
+    
+  }
+
+
+.bgimage{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top:0;
+    left:0;
+    z-index: 0;
+}
+.button {
+    background-color: $purple;
+    color: $white;
+    border: none;
+    width: clamp(100px, 12vw, 156px);
+    height: clamp(30px, 3.2vw, 47px);
+    border-radius: 5px;
+    font-size: clamp(12px, 1.3vw, 14px);
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+    
+    
+//   }
+  .box{
+    bottom: 10%;
+    left: 50%;
+    // right: 10%;
+    transform:translate(-50%,+10%);
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .title{
+    color: aliceblue;
+    text-align: center;
+  }
+  .timeLine{
+    text-align: center;
+    color: aliceblue;
+  }
+  .text{
+    // position: absolute;
+    // bottom: 20%;
+    // left: 30%;
+    // // right: 10%;
+    // transform:translate(-50,+20);
+    color: aliceblue;
+    text-align: center
+};
+  
+  .content {
+    // position: fixed;
+    // top: 0;
+    // left: 0;
+    z-index: 1;
+    min-width: 100vw;
+    min-height: 100vh;
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
