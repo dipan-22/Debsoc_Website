@@ -1,20 +1,16 @@
+
 import React from 'react'
 import styles from "../styles/audtion.module.scss";
 import style from '../styles/takedebaitregister.module.scss'
 import Navbar from "../components/Navbar/navbar";
 import Footer from "../components/Footer/footer";
+import image2 from "../public/Images/takedebait.jpg"
 
-
-const  takedebaitregister = () => {
+const exp = () => {
   return (
-    <form>
-        <div className={style.navbar3}><Navbar /></div>
-        {/* <div className={style.bgimg}></div> */}
-         <div className={style.container}>
-         <div className={style.wrapper}>
-        {/* <div className={style.bgimg}></div> */}
-        {/* <h1 className={style.bigword}>Register <br></br>Now</h1> */}
-          <div className={style.fields}>
+    <div className={styles.content} style={{backgroundImage: `url(${image2.src})`}}>
+        <Navbar/>
+        <div className={style.fields}>
             <div className={`${styles.formWrap} ${style.formWrap}`}>
             <div className={style.circle}></div> 
             <h1 className={style.leaderName}>Team Leader name</h1>
@@ -88,13 +84,9 @@ const  takedebaitregister = () => {
             <button className={style.button}>Click here  to register</button>
           
           </div>
-        </div>
-         </div>
-        
-
         <Footer/>
-    </form>
-   
+    </div>
   )
 }
-export default takedebaitregister
+
+export default exp

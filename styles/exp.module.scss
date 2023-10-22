@@ -1,0 +1,26 @@
+.navbar3 :global #navbar {
+    margin: 0 !important;
+    color: rgba(255, 255, 255, 0.5) !important;
+    backdrop-filter: blur(8px);
+
+    background: rgba(0, 0, 0, 0.7);
+    a {
+      font-size: normal;
+      color: rgba(255, 255, 255, 0.7) !important;
+    }
+    
+  }
+
+.content {
+    // position: fixed;
+     top: 0;
+    // left: 0;
+    z-index: 1;
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    opacity: 0.2;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
